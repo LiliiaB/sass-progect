@@ -163,6 +163,8 @@ meter {
   color: #fafafb;
 }
 
+/* @use "../utils/mixin";
+@use "../utils/variables" as v; */
 .badge {
   display: inline-block;
   min-width: 96px;
