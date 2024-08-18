@@ -1,20 +1,22 @@
-@use "../utils/mixin";
-@use "../utils/variables";
+/* @use "../utils/mixin";
+@use "../utils/variables" as v; */
+
+@use "../utils" as fwd;
 
 .badge {
-  @include mixin.badge-base();
+  @include fwd.badge-base();
 
-  color: variables.$badge-cl;
+  color: fwd.$badge-cl;
 }
 
 .badge-completed {
-  background-color: variables.$completed;
+  background-color: fwd.$completed;
 }
 
 .badge-ended {
-  background-color: variables.$ended;
+  background-color: fwd.$ended;
 }
 
 .badge-active {
-  background-color: variables.$active;
+  background-color: fwd.$active;
 }
